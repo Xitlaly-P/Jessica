@@ -1,0 +1,128 @@
+@font-face {
+    font-family: inter;
+    src: url(fonts/static/Inter-Regular.ttf);
+}
+
+.wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+
+.polaroid {
+    background: #FFFFFF;
+    padding: 1rem;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    max-width: 19%;
+    position: relative;
+    margin: 20px;
+}
+
+.polaroid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-size: 1.4vw;
+    text-align: center;
+    line-height: 2em;
+    font-family: 'cute', cursive;
+}
+
+.polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.40s;
+}
+
+.item:nth-of-type(2n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+}
+
+.item:nth-of-type(2n+1) .polaroid:before {
+    transform: rotate(6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+}
+
+.item:nth-of-type(2n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+}
+
+.item:nth-of-type(2n+2) .polaroid:before {
+    transform: rotate(-6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+}
+
+.item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg);
+    transition: all 0.40s;
+}
+
+.item:hover .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0deg);
+    height: 60%;
+    width: 60%;
+    bottom: 0%;
+    right: 10%;
+    transition: all 0.35s;
+}
+
+h2{
+    text-align: center;
+    font-size: 2vw;
+    color: #FFFFFF;
+    font-family: inter;
+}
+
+body{
+    background: rgb(217,166,183);
+    background: -moz-linear-gradient(180deg, rgba(217,166,183,1) 0%, rgba(251,244,246,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(217,166,183,1) 0%, rgba(251,244,246,1) 100%);
+    background: linear-gradient(180deg, rgba(217,166,183,1) 0%, rgba(251,244,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9a6b7",endColorstr="#fbf4f6",GradientType=1);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    font-family:inter;
+    align-items: end;
+    text-align: end;
+    color: white;
+    padding-top: 1vw;
+    padding-right: 1vw;
+    flex-grow: 1;
+    font-size:1.2vw;
+}
+.nv{
+    padding: .3vw;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

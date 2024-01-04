@@ -30,7 +30,7 @@ body {
 }
 
 header{
-    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("mainheader.png");
+    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("jessai.jpg");
     background-position: center 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -47,6 +47,14 @@ nav{
     color: white;
     padding: 2vw;
     flex-grow: 1;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 .nv{
     padding: .3vw;
@@ -267,4 +275,9 @@ blockquote {
 }
 .blurb{
     font-family: inter;
+}
+
+.mainpar{
+    text-align: center;
+    align-self: center;
 }
