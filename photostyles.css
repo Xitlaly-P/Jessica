@@ -98,6 +98,10 @@ body{
     background: -webkit-linear-gradient(180deg, rgba(217,166,183,1) 0%, rgba(251,244,246,1) 100%);
     background: linear-gradient(180deg, rgba(217,166,183,1) 0%, rgba(251,244,246,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9a6b7",endColorstr="#fbf4f6",GradientType=1);
+
+    /*background-image: url("repeat.png"), linear-gradient(180deg, rgba(217, 166, 183, 1) 0%, rgba(251, 244, 246, 1) 100%);
+    background-repeat: repeat;
+    background-size:5%;*/
 }
 
 header{

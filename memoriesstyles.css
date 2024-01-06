@@ -1,0 +1,223 @@
+@font-face {
+    font-family: inter;
+    src: url(fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: pin;
+    src: url(fonts/Pinyon_Script/PinyonScript-Regular.ttf);
+}
+@font-face {
+    font-family: dosis;
+    src: url(fonts/dosis/static/Dosis-ExtraLight.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(fonts/light/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+    font-family: kalam;
+    src: url(fonts/kalam/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: sat;
+    src: url(fonts/satisfy/Satisfy-Regular.ttf);
+}
+
+header {
+    background-color: black;
+    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("jessai.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the header covers the full viewport height */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: none; /* Remove any default border */
+    box-sizing: border-box; /* Ensure padding and border are included in height/width calculation */
+}
+
+nav{
+    font-family:inter;
+    align-items: end;
+    text-align: end;
+    color: white;
+    padding: 2vw;
+    flex-grow: 1;
+    align-self: flex-end;
+    font-size:1.2vw;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.nv{
+    padding: .3vw;
+}
+
+body, html {
+    height: 100%;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    overflow-x: hidden;
+    color: #181818;
+}
+
+body {
+	overflow-x: hidden;
+	color: #181818;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom:0px;
+    color:#FFFAFA;
+    font-family: sat;
+}
+.mem {
+    text-align: center;
+    font-family:sat;
+    color: #FFFAFA;
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-bottom:18vh;
+}
+
+
+  ul,li{
+    list-style:none;
+  }
+  ul{
+    overflow:hidden;
+    padding:3em;
+  }
+  ul li a{
+    text-decoration:none;
+    color:#000;
+    background:#B398D1;
+    display:block;
+    height:9em;
+    width:9em;
+    padding: 1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+  }
+  ul li a:hover{
+    text-decoration:none;
+  }
+  ul li{
+    margin:1em;
+    float:left;
+  }
+  ul li h2{
+    margin:0;
+    font-size:1vw;
+    font-weight:bold;
+    font-family: kalam;
+
+  }
+  ul li p{
+    font-family: kalam;
+    font-size: clamp(.4vw, .8vw, 1vw);
+  }
+  ul li a{
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+  }
+  ul li:nth-child(even) a{
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#9E6993;
+  }
+  ul li:nth-child(3n) a{
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#A981B2;
+  }
+  ul li:nth-child(5n) a{
+    -o-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  ul li a:hover,ul li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  ol{text-align:center;}
+  ol li{display:inline;padding-right:1em;}
+  ol li a{color:#fff;}
+
+
+  .questionsection {
+    background-color: #D9A6B7;
+    font-size: 2vw;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+  }
+  .questionsection::-webkit-scrollbar {
+    display: none;
+  }
+
+  .questionsection:nth-child(even){
+    background-color: #D9A6B7;
+    color: #FFFAFA;
+  }
+  .questionsection:nth-child(odd){
+    color: black;
+    background-color: #F6F9E5;
+  }
+  .question{
+    font-family: dosis;
+    margin:0;
+    text-align: center;
+    align-self: center;
+    padding-top: 3vh;
+    padding-bottom: 0;
+  }
+  
+  .answers {
+    /* Flex container for horizontal scrolling */
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-top: 0;
+    padding-bottom: .3vw;
+    padding-right: .3vw;
+    padding-left: .3vw;
+    gap: .1vw; /* Add space between sticky notes */
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Reset margin */
+  }
+  
+  .answers li {
+    /* Styling for each sticky note */
+    flex: 0 0 auto; /* Prevent sticky notes from growing */
+    width: 300px; /* Set a fixed width for each sticky note */
+    border-radius: 10px; /* Example border radius */
+    padding: 20px; /* Example padding */
+  }
