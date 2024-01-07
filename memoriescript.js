@@ -1,4 +1,4 @@
-const backgroundImages = ["img1.jpeg", "img2.jpg", "img3.jpg"]; // Replace with your image names
+const backgroundImages = ["img1.jpeg", "img2.jpeg", "img3.jpeg"]; // Replace with your image names
 
 // Function to change background image at intervals
 function changeBackgroundImage() {
