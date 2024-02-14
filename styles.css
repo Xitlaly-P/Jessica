@@ -259,7 +259,7 @@ section {
     }
     @supports (-webkit-touch-callout: none) {
         header{
-            background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/extraPhone.jpeg");
+            background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/iphone.jpeg");
             background-position: center 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
