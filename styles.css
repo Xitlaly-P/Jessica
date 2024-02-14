@@ -257,9 +257,9 @@ section {
         margin-left: 0px;
         max-height:80vh;
     }
-    /*@supports (-webkit-touch-callout: none) {
-        header{
-            background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/extraPhone.jpeg");
+    @supports (-webkit-touch-callout: none) {
+        header {
+            background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/phone.jpeg");
             background-position: center 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -267,8 +267,9 @@ section {
             height: 100vh;
             display: flex;
             flex-direction: column;
-           }
-    }*/
+            max-width: 100%;
+        }
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
