@@ -353,12 +353,37 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
 }
 
 @media (max-width: 650px) {
- header{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
- }
   nav{
-      font-size:2.3vh;
+    font-size:2.3vh;
+  } 
+  .inner {
+    font-size:2vh;
+    width: 60vw;
+    text-align: center;
+    padding:.5vh;
   }
- }
+  .answers li a{
+    height:fit-content;
+    width:fit-content;
+  }
+  .answers li{
+    margin-bottom: 6.5vh;
+    margin-top: 5vh;
+  }
+
+  ul li{
+    margin:.5vw;
+    float:left;
+  }
+
+  ul li h2{
+    font-size:2.1vh;
+  }
+
+  ul li p{
+    font-size:1.8vh;
+  }
+  .question{
+    font-size: 2.7vh;;
+  }
+}
