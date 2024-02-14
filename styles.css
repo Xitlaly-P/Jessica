@@ -208,12 +208,30 @@ section {
     height: 120px;
     width: 120px;
 }
-@media (max-width: 768px) {
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    outline: 0;
+}
+.owl-carousel button.owl-dot {
+    outline: 0;
+}
+
+.gtco-testimonials .card .card-img-most {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px #95abbb;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
     .gtco-testimonials {
         padding-top: 20px;
    }
    header{
-    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/phoneVersion.jpeg");
+    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/phone.jpeg");
     background-position: center 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -240,18 +258,37 @@ section {
         max-height:80vh;
     }
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-    outline: 0;
-}
-.owl-carousel button.owl-dot {
-    outline: 0;
-}
 
-.gtco-testimonials .card .card-img-most {
-    max-width: 150px;
-    border-radius: 50%;
-    margin: 15px auto 0;
-    box-shadow: 0 8px 20px -4px #95abbb;
-    width: 150px;
-    height: 150px;
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .gtco-testimonials {
+        padding-top: 20px;
+   }
+   header{
+    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/extraPhone.jpeg");
+    background-position: center 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+   }
+    .mem{
+        padding-bottom: 60%;
+        margin-right:0px;
+    }
+    nav{
+        font-size:2.3vh;
+    }
+    .intro{
+        justify-content: center;
+    }
+
+    .introbox{
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-height:80vh;
+    }
 }
