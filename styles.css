@@ -231,7 +231,7 @@ section {
         padding-top: 20px;
    }
    header{
-    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/phone.jpeg");
+    background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/sza.jfif");
     background-position: center 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -259,7 +259,7 @@ section {
     }
     @supports (-webkit-touch-callout: none) {
         header {
-            background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/phone.jpeg");
+            background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/badbunny.jfif");
             background-position: center 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
