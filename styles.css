@@ -208,7 +208,7 @@ section {
     height: 120px;
     width: 120px;
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .gtco-testimonials {
         padding-top: 20px;
    }
