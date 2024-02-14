@@ -260,11 +260,12 @@ section {
     @supports (-webkit-touch-callout: none) {
         header {
             background-image: radial-gradient(transparent 60%, rgba(0,0,0,0.8072478991596639) 100%), url("images/phone.jpeg");
-            background-position: center 0;
+            background-position: center top; /* Adjust the position as needed */
             background-repeat: no-repeat;
             background-attachment: scroll;
-            background-size: auto 100%;
+            background-size: 100% auto; /* Ensure the image covers the full width while maintaining aspect ratio */
             width: 100vw;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             max-height: 100%;
