@@ -124,6 +124,10 @@ h1{
     -moz-transition:-moz-transform .15s linear;
     -o-transition:-o-transform .15s linear;
     -webkit-transition:-webkit-transform .15s linear;
+    overflow-y: auto;
+  }
+  ul li a::-webkit-scrollbar {
+    display: none; /* Hide scroll bar in Webkit browsers */
   }
   ul li a:hover{
     text-decoration:none;
